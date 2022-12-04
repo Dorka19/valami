@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="../CSS/index.css" type="text/css" rel="stylesheet">-->
+	<!--<link href="../CSS/lablec.css" type="text/css" rel="stylesheet">-->
+	<!--<link href="../CSS/admin.css" type="text/css" rel="stylesheet">-->
+	<link href="../CSS/filmfel.css" type="text/css" rel="stylesheet">
+	<!--<link href="../CSS/regisztracio.css" type="text/css" rel="stylesheet">-->
+    <title>Filmek feltöltése</title>
+</head>
+<body>	
+<form action="/action_page.php" id="adminfilmform">
+		<div id="regdiv2"> 
+        <div id="piroshatter">
+			<b class="filmfelszöveg">Nemzetiség feltöltése</b>
+		</div>
+		<div class="containerregiszt1">
+
+			<label class="filmlabels" for="nemzetnev"><b>Nemzetiség neve</b></label>
+			<input class="textinput" type="text" name="nemzetnev"><br>
+			
+			<label for="nemvalaszto" class="labels"><b>Nemzetiségek</b></label>
+				<select class="inputs1" id="nemvalaszto1">
+					<option value="0">Nem választott</option>
+					<option value="1">HU-Magyar</option>
+					<option value="2">RU-Orosz</option>
+				</select>
+		
+		</div>
+
+		<div id="felsubmit1">
+		<br><br><br>
+		<button type="submit" class="filmfelbtn">Mentés</button><br><br>
+		<button class="filmfelbtn">Szerkesztés</button><br><br>
+		<button class="filmfelbtn">Törlés</button>
+		</div>
+	</div>
+	</form>
+</body>
+</html>

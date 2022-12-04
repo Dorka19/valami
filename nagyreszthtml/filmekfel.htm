@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="../CSS/index.css" type="text/css" rel="stylesheet">-->
+	<!--<link href="../CSS/lablec.css" type="text/css" rel="stylesheet">-->
+	<!--<link href="../CSS/admin.css" type="text/css" rel="stylesheet">-->
+	<link href="../CSS/filmfel.css" type="text/css" rel="stylesheet">
+	<!--<link href="../CSS/regisztracio.css" type="text/css" rel="stylesheet">-->
+    <title>Filmek feltöltése</title>
+</head>
+<body>
+		<form action="../php/adminmukodes.php" id="adminfilmform" method="post">
+		<div class="regdiv1"> 
+        <div id="piroshatter">
+			<b class="filmfelszöveg">Film feltöltése</b><br>
+		</div>
+		<div class="containerregiszt1">
+
+			<label class="filmlabels" for="fcim"><b>Film teljescím</b></label>
+			<input class="textinput" type="text" name="fcim"><br><br><br>
+				
+			<label class="filmlabels" for="fsong"><b>Zene</b></label>
+			<input class="textinput" type="text" name="fsong"><br><br><br>	 <!--bármiilyen name-->
+				
+			<label class="filmlabels" for="fleiras"><b>Film leírás</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="textinput" type="text" name="fleiras" id="fleiras"><br><br><br>
+	
+			<label class="filmlabels" for="fmufaj"><b>Műfaj</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="pwinput" type="text" name="fmufaj" id="fmufaj"><br><br><br>
+	
+			<label class="filmlabels" for="fujmuf"><b>Új Műfaj</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="pwinput" type="text" name="fujmuf" id="fujmuf">
+		</div>
+		<br><br>
+		<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+		<div class="nemkivalaszto1">&nbsp;&nbsp;&nbsp;
+			<label for="nemvalaszto" class="labels"><b>Rendező:</b></label>
+				<select class="inputs1" id="nemvalaszto1" name="nemvalaszto1">
+					<option value="0">Nem választott</option>
+					<option value="1">Josh Depp</option>
+					<option value="2">Új rendező</option>
+				</select>
+		</div>
+
+			<div class="eletkorkivalsztodatum">
+				<label for="birthdaytime" id="szullabel" class="labels"><b>Kiadás dátum:</b></label>
+				<input class="inputs1" type="date" id="birthdaytime" name="birthdaytime"><br><br><br>
+		<div id="felsubmit">
+		<button type="submit" class="filmfelbtn" name="submitUjFilm">Mentés</button><br><br>
+		<button class="filmfelbtn">Szerkesztés</button><br><br>
+		<button class="filmfelbtn">Törlés</button>
+		</div>
+	</div>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/beallframes.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>Nem beállítása</h1>
+    <form method="post" action="../php/beallmukodes.php">
+        <label for="nembeall">Válaszd ki a nemedet: </label><br><br>
+        <select name="nembeall" id="nembeall">
+            <option value="none">Nem választok</option>
+            <option value="no">Nő</option>
+            <option value="ferfi">Férfi</option>
+        </select><br><br><br>
+        <input class="balra" type="submit" value="Mentés" name="submitNem" id="submitNem">
+    </form>
+</body>
+</html>

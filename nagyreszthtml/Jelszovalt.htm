@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/beallframes.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>Jelszó megváltoztatása</h1>
+    <form method="post" action="../php/beallmukodes.php">
+        <label for="regijelszo">Régi jelszó:</label><br><br>
+        <input type="password" name="regijelszo" id="regijelszo" placeholder="Írd ide a régi jelszavadat..."><br><br>
+        <label for="ujjelszo1">Új jelszó:</label><br><br>
+        <input type="password" name="ujjelszo1" id="ujjelszo1" placeholder="Írd ide az új jelszavadat..."><br><br>
+        <label for="ujjelszo2">Új jelszó mégegyszer:</label><br><br>
+        <input type="password" name="ujjelszo2" id="ujjelszo2" placeholder="Ide is írd be az új jelszavadat..."><br><br>
+        <input type="submit" name="submitJelszo" id="submitJelszo" value="Mentés">
+    </form>
+</body>
+</html>

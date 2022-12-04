@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="../CSS/index.css" type="text/css" rel="stylesheet">-->
+	<!--<link href="../CSS/lablec.css" type="text/css" rel="stylesheet">-->
+	<!--<link href="../CSS/admin.css" type="text/css" rel="stylesheet">-->
+	<link href="../CSS/filmfel.css" type="text/css" rel="stylesheet">
+	<!--<link href="../CSS/regisztracio.css" type="text/css" rel="stylesheet">-->
+    <title>Színészek feltöltése</title>
+</head>
+<body>
+	<form action="/action_page.php" id="adminfilmform">
+		<div class="regdiv1"> 
+        <div id="piroshatter">
+			<b class="filmfelszöveg">Színészek feltöltése</b>
+		</div>
+		<br>
+		<div class="containerregiszt1">
+
+			<label class="filmlabels" for="szinnev"><b>Színész neve</b></label>
+			<input class="textinput" type="text" name="szinnev"><br>
+				
+			<label class="filmlabels" for="szorsz"><b>Születési ország</b></label><br>
+			<input class="textinput" type="text" name="szorsz"><br> <!--bármiilyen name-->
+				
+			<label class="filmlabels" for="szdij"><b>Díjak</b></label><br>
+			<input class="textinput" type="text" name="szdij" id="szdij"><br><br><br>
+	
+			<label class="filmlabels" for="szkep"><b>Színész kép</b></label>
+			<input class="pwinput" type="text" name="szkep" id="szkep"><br>
+	
+			<label class="filmlabels" for="profkepnek"><b>Profil képnek</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="pwinput" type="text" name="profkepnek" id="profkepnek">
+		</div>
+
+		<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+		<div class="nemkivalaszto1">&nbsp;&nbsp;&nbsp;
+			<label for="nemvalaszto" class="labels"><b>Nemzetisége</b></label>
+				<select class="inputs1" id="nemvalaszto1">
+					<option value="0">Nem választott</option>
+					<option value="1">Magyar</option>
+					<option value="2">Orosz</option>
+				</select>
+		</div>
+
+			<div class="eletkorkivalsztodatum">
+				<label for="birthdaytime" id="szullabel" class="labels"><b>Születés dátuma:</b></label>
+				<input class="inputs1" type="date" id="birthdaytime" name="birthdaytime">
+			</div><br><br>
+		<div id="felsubmit">
+		<button type="submit" class="filmfelbtn">Mentés</button><br><br>
+		<button class="filmfelbtn">Szerkesztés</button><br><br>
+		<button class="filmfelbtn">Törlés</button>
+		</div>
+	</div>
+	</form>
+
+	<!--	<form action="/action_page.php" id="regform">
+		<div id="regdiv1"> 
+        <div id="piroshatter">
+			<b class="filmfelszöveg">Szinész feltöltése</b>
+		</div>
+		<div class="containerregiszt1">
+
+			<label class="filmlabels" for="uname"><b>Színész neve</b></label>
+			<input class="textinput" type="text" placeholder="Felhasználónév" name="uname"><br>
+				
+			<label class="filmlabels" for="uname"><b>Születési ország</b></label>
+			<input class="textinput" type="text" placeholder="Felhasználónév" name="uname"><br>	
+			
+			<label class="filmlabels" for="email"><b>Díjak</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="textinput" type="text" placeholder="E-mail-cím" name="email" id="email"><br>
+	
+			<label class="filmlabels" for="psw"><b>Színész kép</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="pwinput" type="password" placeholder="Jelszó" name="psw" id="psw"><br>
+	
+			<label class="filmlabels" for="psw-repeat"><b>Profil képnek</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="pwinput" type="password" placeholder="Jelszó újra" name="psw-repeat" id="psw-repeat"><br>
+			
+		</div>
+
+		<!--surround the select box with a "custom-select" DIV element. Remember to set the width:
+		<div class="nemkivalaszto1">&nbsp;&nbsp;&nbsp;
+			<label for="nemvalaszto" class="labels"><b>Nemzetisége</b></label>
+			<br>
+			<div class="custom-select">
+				<select class="inputs1" id="nemvalaszto1">
+					<option value="0">Nem választott</option>
+					<option value="1">Magyar</option>
+					<option value="2">Német</option>
+				</select>
+			</div>
+		</div>
+
+			<div class="eletkorkivalsztodatum">
+				<label for="birthdaytime" id="szullabel" class="labels"><b>Születési dátum:</b></label>
+				<br>
+				<input class="inputs1" type="date" id="birthdaytime" name="birthdaytime"><br>
+				<label for="birthdaytime" id="szullabel" class="labels"><b>Díj átadás:</b></label>
+				<br>
+				<input class="inputs1" type="date" id="birthdaytime" name="birthdaytime">
+			</div>
+		<div id="felsubmit"><button type="submit" class="filmfelbtn">Mentés</button></div>
+	</div>
+	</form>-->
+
+</body>
+</html>
