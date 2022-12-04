@@ -1,0 +1,599 @@
+/*Filmimádók weboldal része*/
+/*kozosseg css*/
+
+/*felhasználói keresői sáv*/
+
+.gombnavkozep {
+	background-color: #740101;
+	color: #F2F2F2;
+    position: fixed;
+	margin-top:70px;
+	top:0;
+	left:0;
+    width: 100%;
+    height: 50px;
+	 z-index: 2;
+}
+
+.kateg {
+	position: relative;
+    display: inline-block;
+    height: 46px;
+	margin-left: 40px;
+	margin-right: 2px;
+	width: 240px;
+	border: 2px solid #740101;
+}
+
+.kateg2 {
+	position: relative;
+    display: inline-block;
+    height: 46px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 240px;
+	border: 2px solid #740101;
+}
+	
+
+
+.tobbilenyilomenu {
+	position: relative;
+    display: inline-block;
+    height: 46px;
+	margin-left: 0px;
+	margin-right: 10px;
+	width: 200px;
+	border: 2px solid #740101;
+}
+	
+.kateg:hover {border: 2px solid #D6DBD2;}
+.kateg2:hover {border: 2px solid #D6DBD2;}		  
+.tobbilenyilomenu:hover {border: 2px solid #D6DBD2;}
+
+.dropbtn4 {
+    box-sizing: border-box;
+    font-family: Arial, serif;
+	text-align: center;
+    background-color: #740101;
+    font-size: 18px;
+    color: #D6DBD2; /*betuszin*/
+	border:none;
+    cursor: pointer;
+	padding: 15px 15px;
+    height: 48px;
+	width: 240px;
+}
+   
+.dropbtn5 {
+    box-sizing: border-box;
+    font-family: Arial, serif;
+	text-align: center;
+    background-color: #740101;
+    font-size: 18px;
+    color: #D6DBD2; /*betuszin*/
+	border:none;
+    cursor: pointer;
+	padding: 15px 15px;
+    height: 48px;
+	width: 200px;
+}
+   
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: #D6DBD2;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  background-color: #D6DBD2;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdown-content6 {
+	display: none;
+	position: absolute;
+	background-color: #D6DBD2;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+}
+
+
+.dropdown-content3 a {
+	
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content4 a {
+	
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content6 a {
+	
+	color: black;
+	padding: 9.4px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content3 a:hover {background-color: #c2c2c2; }
+.dropdown-content4 a:hover {background-color: #c2c2c2; }
+.dropdown-content6 a:hover {background-color: #c2c2c2; }
+
+.kateg:hover  .dropdown-content3 {display: block;  position: absolute; z-index: 2;}
+.kateg2:hover  .dropdown-content3 {display: block;  position: absolute; z-index: 2;}
+.tobbilenyilomenu:hover  .dropdown-content4 {display: block;  position: absolute; z-index: 2;}
+.tobbilenyilomenu:hover  .dropdown-content6 {display: block;  position: absolute; z-index: 2;}
+
+.kateg:hover  .dropbtn4  {background-color: #A20000;}
+.kateg2:hover  .dropbtn4  {background-color: #A20000;}
+.tobbilenyilomenu:hover  .dropbtn5  {background-color: #A20000;}
+
+
+.vertical-menu2 {
+	width: 240px;
+  height: 212px;
+  overflow-y: auto;
+}
+
+.vertical-menu3 {
+	width: 200px;
+  height: 212px;
+  overflow-y: auto;
+}
+
+
+
+
+/*kis kereső bar*/
+.search-container {
+  float: right;
+   margin: 6px 10px 5px 0px;
+}
+
+.szovegdobozkismenukereso {
+	width: 200px;
+	height: 34px;
+	float: left;
+	border: none;
+	margin-top: 0.5px;
+	margin-bottom:0.5px;
+	padding-left:10px;
+	background-color: #ddd;	
+}
+
+
+.szovegdobozkismenukereso:focus { 
+	outline: 2px solid #A20000;
+ }
+
+
+.search-container button {
+  
+  padding: 8px 7.5px;
+  width:38px;
+  height:36px;
+  margin-top: 0.5px;
+  margin-bottom:0.5px;
+  background: #c2c2c2;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.i.fa.fa-schreach {
+	margin: auto;
+}
+
+.search-container button:hover {
+  background: #adadad;
+}
+
+
+/*ez kell??
+@media screen and (max-width: 600px) {
+.search-container {
+    float: none;
+  }
+}  */
+
+
+
+/*lenyiló gomb a mindenszűrös menühöz*/
+.search-containerplus {
+	
+	margin: 6px 10px 5px 0px;
+	width:40px;
+	height:40px;
+	 float: right;
+}
+
+.search-containerplus .plusgomb   {
+	
+  padding: 8px 7.5px;
+  width:38px;
+  height:36px;
+  margin-top: 0.5px;
+  margin-bottom:0.5px;
+  background: #c2c2c2;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-containerplus .plusgomb:hover {
+  background: #adadad;
+} 
+
+.keresokep {
+	margin: auto;
+}
+
+
+
+#margo2 {
+	margin-top:140px;
+	 margin-right:105px;
+	 margin-left:105px;
+	 margin-bottom:40px;
+	 z-index: -1;
+}
+
+/*Részletesszűrő*/
+
+ #reszletesmenufeliratformazva {
+	 
+	 font-size: 20px;
+	 font-family: Arial;
+	   margin-bottom:15px;
+	   width: 300px;
+	 color: #D6DBD2; /*betuszin*/
+ }
+ 
+
+ /*részletesszuro alatti bal oldal*/
+ .dobozbanszuro {
+	 width: 35%;
+	 height: 220px;
+	 float:left;
+	background-color:#adadad;
+ }
+ 
+.formazottszovegszuromenu0 {
+	border-top:2px solid #D6DBD2;
+	font-size: 23px;
+	color:#A20000;
+	 font-family: Arial;
+	 font-weight: bold;
+	 width: 99.25%;
+	 height: 36px;
+	 float:left;
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+	 padding-left: 10px;
+	background-color:#adadad;
+}
+ 
+ /*
+ #filmcimkeres {
+	width: 200px;
+	height: 34px;
+ }
+ */
+ .szovegdobozkismenuszuro {
+	width: 200px;
+	height: 34px;
+	border: none;
+	background-color: #ddd;
+	margin-bottom:25px;
+	margin-top:5px;
+	margin-left:5px;
+	padding-left: 15px;
+}
+
+.szovegdobozkismenuszuro2 {
+	width: 200px;
+	height: 34px;
+	border: none;
+	background-color: #ddd;
+	margin-bottom:10px;
+	margin-top:5px;
+		margin-left:5px;
+	padding-left: 15px;
+}
+
+.szovegdobozkismenuszuro:focus{ outline: 2px solid #A20000; }
+
+.szovegdobozkismenuszuro2:focus{ outline: 2px solid #A20000; }
+
+
+/*értékelés*/
+.ertekelokivalaszto {
+  box-sizing: border-box;
+   width: 380px;
+  height: 52px;
+  padding-top: 0px;
+ 
+}
+
+.custom-select {
+	height:40px;
+	margin-top:-15px;
+	margin-right:32px;
+	float:right;
+	width:140px;
+
+}
+
+
+.inputs2 {
+ padding: 5px;
+ text-align:center;
+
+}
+
+#ertekelokivalaszto {
+  margin:auto;
+  margin-top: -20px;
+  margin-right: 26px;
+  width: 190px;
+}
+
+
+/*Kereső gomb*/
+.reszletkerszurogomb:hover {
+  background-color: #740101;
+}
+.reszletkerszurogomb {
+  padding: 5px;
+  background-color: #A20000;
+  color: #D6DBD2;
+  padding: 10.5px 20px 10.5px 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  font-size: 15px;
+  height: 40px;
+
+}
+#reszletkergomb {
+  font-family: Arial;
+}
+
+
+/*Részletesszuro alatti jobb oldal*/
+.dobozbanszuro2 {
+	 width:65%;
+	 height: 220px;
+	 float:right;
+	background-color:#adadad;
+}
+
+/*menük*/
+.formazottkereso {
+	float:left;
+	width:60%;
+	margin-top:5px;
+}
+
+.formazottkereso3 {
+	float:right;
+	width:40%;
+	margin-top:5px;
+	
+}
+/*menüknél fekete felirat*/
+.formazottszovegszuromenu3 {
+	font-size: 17px;
+	 font-family: Arial;
+	 font-weight: bold;
+	 padding-top: 10px;
+	 padding-bottom: 5px;
+	 
+		position: relative;
+		cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.formazottszovegszuromenu4 {
+	font-size: 17px;
+	 font-family: Arial;
+	 font-weight: bold;
+	 width: 15%;
+	 height: 26px;
+	 padding-bottom: 5px;
+	 padding-left: 10px;
+}
+
+/*checkbox*/
+input[type=checkbox] {
+	accent-color: #A20000;
+}
+  
+
+
+
+/*Nemzetiség zászlói*/
+.vertical-menu1 {
+  width: 200px;
+  height: 170px;
+  overflow-y: auto;
+   float:right;
+   margin-top:5px;
+   margin-right:100px;
+}
+
+
+.vertical-menu1 a {
+  background-color: #ddd;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align:center;
+  height:18.4px;
+}
+
+.vertical-menu1 a:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/*alul a fehér vonal*/
+hr {
+  border: 1px solid #D6DBD2;
+ margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/*Felhasználók megjelenítése részletes szűrő alatt*/
+.felhasznalokfelsorolasa {
+	height:300px;
+}
+
+.felhasznalogomb0   {
+	
+	margin: 10px 0px 0px 0px;
+	float: left;
+	padding: 15px;
+	width:210px;
+	height:210px;
+	background: #c2c2c2;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.felhasznalogomb0:hover {
+  background: #740101;
+} 
+
+.felhasznalosszele {
+	margin: auto;
+}
+
+
+
+.felhasznalokszovegdoboz {
+	width:1059px;
+	height:210px;
+	float:right;
+	margin-top:10px;
+	padding-right:20px;
+	padding-left:20px;
+	background-color:#adadad;
+}
+
+.felhasznaloknev1{
+	text-decoration: none;
+	font-size:18px;
+	font-family: Arial;
+	font-weight:bold;
+	color:black;
+}
+
+.felhasznaloknev1:hover{
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #A20000;
+}
+
+.margoszel{
+	padding-bottom:7px;
+	padding-top:10px;
+background-color:#adadad;
+
+	width:20%;
+	height:24px;
+}
+
+
+/*kis linkek felhasználónál*/
+.felhasznaloitul{
+	text-decoration: none;
+	font-size:13px;
+	font-family: Arial;
+	color:black;
+	margin-bottom:15px;
+}
+
+.felhasznaloitul:hover{
+	text-decoration: none;
+	font-size:13px;
+	font-family: Arial;
+	color:#A20000;
+	margin-bottom:15px;
+}
+
+
+/*fekete adatok*/
+.formazottszoveg3 {
+	text-decoration: none;
+	font-size:15px;
+	font-weight: bold;
+	font-family: Arial;
+	color:black ;
+}
+.adatok {
+	text-decoration: none;
+	font-size:14px;
+	font-family: Arial;
+	color:black ;
+	margin-bottom:5px;
+	margin-left:15px;
+}
+/*adatok tárolódoboza*/
+.dobozbal {
+	float:left;
+	height:40%;
+	width:15%;
+}
+.dobozjobb {
+	float:right;
+	height:40%;
+	width:85%;
+}
+
+.szovegmargo {
+	margin-bottom:10px;
+}
+
+
+
+/*zaszlo*/
+.nemzetisegszuros1 {
+	width:8%;
+	height:60px;
+	float:right;
+	background-color:#adadad;
+	
+}
+

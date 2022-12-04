@@ -1,0 +1,251 @@
+body{
+    background-image: url("../kep/hatter.jpg");
+}
+.kulso{
+    box-sizing: border-box;
+    border-color: rgb(255,0,0);
+    border-style: solid;
+    border-width: 10px;
+    background-color: rgba(0,0,0,.9);
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.kozepsoresz{
+    box-sizing: border-box;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 75%;
+    height: 75%;
+}
+.kozepsoresz h1{
+    text-align: center;
+    font-size: 40px;
+
+}
+.bemutatkozoszoveg{
+    background-color: lightgrey;
+    padding: 15px;
+
+}
+.bemutatkozoszoveg div{
+    padding: 10px;
+
+}
+
+table {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+table tr{
+    text-align: center;
+}
+table img{
+    padding-bottom: 5px;
+}
+.galeriaszoveg{
+    font-size: 30px;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px;
+}
+.galeriaszoveg p{
+    text-align: center;
+    font-size: 40px;
+}
+.gallery-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery-container div {
+    font-style: italic;
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .thumbnails img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .scrollbar {
+    width: 1px;
+    height: 720px;
+    background: #ccc;
+    display: block;
+    margin: 0 0 0 8px;
+  }
+  
+  .thumb {
+    width: 1px;
+    position: absolute;
+    height: 0;
+    background: #000;
+  }
+  
+  .slides {
+    margin: 0 16px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: calc(540px + 1rem);
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+  
+  .slides > div {
+    scroll-snap-align: start;
+  }
+  
+  .slides img {
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-container2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery-container2 div {
+    font-style: italic;
+  }
+  
+  .thumbnails2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .thumbnails2 img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .scrollbar2 {
+    width: 1px;
+    height: 720px;
+    background: #ccc;
+    display: block;
+    margin: 0 0 0 8px;
+  }
+  
+  .thumb2 {
+    width: 1px;
+    position: absolute;
+    height: 0;
+    background: #000;
+  }
+  
+  .slides2 {
+    margin: 0 16px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: calc(540px + 1rem);
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+  
+  .slides2 > div {
+    scroll-snap-align: start;
+  }
+  
+  .slides2 img {
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  .slides2::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-container3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery-container3 div {
+    font-style: italic;
+  }
+  
+  .thumbnails3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .thumbnails3 img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .scrollbar3 {
+    width: 1px;
+    height: 720px;
+    background: #ccc;
+    display: block;
+    margin: 0 0 0 8px;
+  }
+  
+  .thumb3 {
+    width: 1px;
+    position: absolute;
+    height: 0;
+    background: #000;
+  }
+  
+  .slides3 {
+    margin: 0 16px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: calc(540px + 1rem);
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+  
+  .slides3 > div {
+    scroll-snap-align: start;
+  }
+  
+  .slides3 img {
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  .slides3::-webkit-scrollbar {
+    display: none;
+  }
+
+
+

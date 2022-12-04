@@ -1,0 +1,656 @@
+/*Filmimádók weblap alap CSS fileja*/
+/*alap CSS rész*/
+
+body{
+  background-color:#515151;
+  margin: 0px;
+  padding-top: 0px;
+}
+
+input[type=checkbox]
+{
+  accent-color: #A20000;
+}
+/*beleirando:
+  linkek
+  alapértelmezett betű: stílusok, méretek, színek, stb.
+  alapértelmezett displayek: margók backgroundok stb.
+*/
+
+
+/*Fejléc CSS része*/
+
+  #topmargo {
+    height: 70px;
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+  }
+
+  .topnav{
+	  background-color: #A20000;
+	  color: #F2F2F2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    font-family: Arial, serif;
+    background-color: #A20000;
+    color: #D6DBD2; /*betuszin*/
+    text-align: center;
+    text-decoration: none;
+    width: 8%;
+    float: left;
+    font-size: 19px;
+  }
+
+  .navgomb {
+    padding: 21px 15px;
+    height: 28px;
+    text-align: center;
+    float: left;
+  }
+  
+  #navgombbejreg {
+    padding: 21px 15px;
+    height: 28px;
+    text-align: center;
+  }
+
+  #fejleckozep {
+    font-size: 20px;
+	  text-align: center;
+    width: 105%;
+  }
+
+  #fejlecjobb{
+	  font-size: 20px;
+	  text-align: center;
+    float: right;
+  }
+
+  .logo {
+    padding: 13.5px 15px;
+    height:43px;
+    font-family: Arial, serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: #740101;
+    color: #F2F2F2;
+    width: 10%;
+    padding-right: 10%;
+  }
+
+  .logokep
+  {
+    padding: 15px;
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .topnav a.active {
+    padding: 13.5px 15px;
+    height:43px;
+    font-family: Arial, serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: #740101;
+    color: #F2F2F2;
+    box-shadow: 0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  }
+  
+  
+  .navgomb:hover, .navgomb2:hover, .navgomb.aktiv {
+    padding: 21px 15px;
+    height:28px;
+    background-color: #740101;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+    font-size: 21px;
+  }
+
+  .logokep:hover, .kiemeltlogo
+  {
+    background-color: #740101;
+    box-shadow: 0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  }
+  
+  #navgombbejreg:hover{
+    padding: 21px 15px;
+    height:28px;
+    background-color: #740101;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  }
+  
+  .topnav a.active:hover {
+    padding: 13.5px 15px;
+    height:43px;
+    background-color: #740101;
+     text-decoration: none;
+     text-align: center;
+     box-shadow: 0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  }
+  
+  /*lenyíló bejelentkezés/regisztráció*/
+  .dropdown {
+    /*float: left;*/
+    /*position: relative;*/
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+   .dropbtn {
+    box-sizing: border-box;
+    font-family: Arial, serif;
+    background-color: #A20000;
+    font-size: 17px;
+    padding: 23.4px 15px;
+    color: #D6DBD2; /*betuszin*/
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+   }
+
+  .dropbtn:hover{
+    background-color: #740101;
+    box-shadow:  0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7F7F7F;
+    overflow: auto;
+    box-shadow:  0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+    width: 500px;
+    margin-left: -244px;
+  }
+  
+  .dropdown-content a {
+    box-sizing: border-box;
+    color: #D6DBD2;
+    padding: 10px 4px;
+    font-size:12px;
+    text-decoration: none;
+    text-align: center;
+    margin: 4px;
+    background-color:#A20000;
+    width: 458px;
+  }
+  
+  .dropdown-content a:hover {background-color: #740101;}
+  
+  .show {
+    display: block;
+    }
+    
+  /*bejelentkezés/regisztráció lenyíló belseje*/
+  #myDropdown .dropdown-content {
+    padding: 200px;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .topnav form {
+    border: 3px solid #7F7F7F;
+    }
+  
+  .topnav label {
+    font-family: Arial, serif;
+    color: #740101;
+    font-size: 18px;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  .topnav input[type=text], .topnav input[type=password] {
+    width: 100%; /*Ezt átírni!*/
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .bejelentkez {
+    background-color: #A20000;
+    color: #D6DBD2;
+    padding: 10.5px 20px 10.5px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size:15px;
+    height: 40px;
+  }
+  
+  .bejelentkez:hover {
+    background-color: #740101;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+  }
+
+  img.avatar {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .container0 {
+    font-family: Arial, serif;
+    color: #740101;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .container1 {
+    padding: 10px 18px;
+  }
+  
+  .container2 {
+    padding: 0px 14px;
+    width: 100px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 100px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+/*Lábléc CSS része*/
+
+  footer{
+    height: 200px;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	  background-color: #A20000;
+	  color: #F2F2F2;
+  }
+
+  footer p, footer a{
+	  font-family: Arial, serif;
+	  color: #D6DBD2;
+  }
+
+  .footeroszlop p
+  {
+    width: 120%;
+  }
+
+  .footeroszlop {
+	  box-sizing:border-box;
+	  float: left;
+	  padding-right: 10%;
+	  max-width: 25%;
+  }
+
+  .navgomb2
+    {
+      display: none;
+      padding: 21px 15px;
+      height: 28px;
+      text-align: center;
+      float: left;
+    }
+
+  #logo, .lenyilomenu
+  {
+    display: none;
+  }
+
+  #footer
+  {
+    box-sizing: border-box;
+    width: 80%;
+    height: 200px;
+    margin: 0px 15%;
+    padding-top: 10px;
+  }
+
+  #reg
+  {
+    margin-bottom: 20px;
+  }
+
+
+
+  @media only screen and (max-width: 1110px) {
+
+    .footeroszlop p
+    {
+     font-size: 14px;
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+    }
+    .logo, #fejleckozep
+    {
+      display: none;
+    }
+
+    .navgomb2
+    {
+      display: block;
+    }
+
+    #logo, .lenyilomenu
+    {
+    display: block;
+    }
+
+    #lenyilomenu{
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      position:absolute;
+      display: block;
+      width: 225px;
+      height: 350px;
+      background-color: #A20000;
+      font-size: 26px;
+      position: absolute;
+      z-index: 3;
+   }
+
+   #lenyilomenu a
+   {
+    width: 212px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+   }
+
+   #lenyilomenu a:hover
+   {
+    font-size: 19px;
+   }
+
+   #logo {
+    box-sizing: border-box;
+    float: left;
+    padding: 13.5px 15px;
+    padding-left: 0px;
+    text-align: center;
+    width: 242px;
+    height: 70px;
+    background-color: #A20000;
+  }
+
+  #logo:hover
+  {
+    background-color: #740101;
+    cursor: pointer;
+  }
+
+  #lenyilomenu
+  {
+    display: none;
+    margin-top: 67px;
+  }
+
+  .nyil
+  {
+    font-size: 17px;
+    color: white;
+  }
+
+  #nyil1
+  {
+    width: 18px;
+  }
+
+  }
+
+  #jelszoemlekezteto
+  {
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 520px) {
+    body {
+      width: 520px;
+      overflow-x: scroll;
+    }
+
+    .dropdown-content {
+      width: 490px;
+      margin-left: -490px;
+      margin-top: 50px;
+    }
+
+    #lenyilomenu a
+    {
+    width: 195px;
+    }
+
+    .dropbtn {
+      top: 1;
+      right: 0;
+      position: fixed;
+      width: 258px;
+      margin-top: -18.5px;
+    }
+
+    #logo {
+      width: 240px;
+    }
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  font-family: Arial, serif;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #7F7F7F;
+  margin: 15% auto;
+  padding: 20px;
+  border: 10px solid #740101;
+  width: 450px;
+  height: 110px;
+  box-shadow:  0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #740101;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#jelszemDiv
+{
+  width: 70%;
+  margin: 0px auto;
+}
+
+#jelszemDiv>form>input
+{
+    border: none;
+    background: #D6DBD2;
+    outline: none;
+    padding: 3px;
+    font-size: 16px;
+    width: 300px;
+    float: right;
+}
+
+#jelszemDiv>form>label
+{
+  color: #F2F2F2;
+}
+
+#jelszemDiv>form>#jelszemsb {
+  width: 50px;
+  padding: 3px 10px;
+  font-size: 15px;
+  float: right;
+  margin: 10px 0px;
+  background-color: #A20000;
+  color: #D6DBD2;
+  cursor: pointer;
+}
+
+#jelszemDiv>form>#jelszemsb:hover {
+  background-color: #740101;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 300px;
+  }
+
+  .close {
+    font-size: 22px;
+  }
+
+  #jelszemDiv>form>input
+  {
+    padding: 2px;
+    font-size: 14px;
+    width: 200px;
+  }
+}
+
+/*a jobboldali lenyíló ablak*/
+
+.kisprofildiv {
+  float: left;
+  width: 50%;
+}
+
+.fuggovonal {
+  border-left: 4px solid #740101;
+  height: 100px;
+  float: left;
+  margin-top: 10px;
+}
+
+.leirszerk, .leirment, .leirtorles, #submitMagamrol {
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #D6DBD2;
+  margin-bottom: 7px;
+}
+
+.leirtorles {
+  margin-right: 84px;
+}
+
+.leirszerk:hover, .leirment:hover, .leirtorles:hover {
+  color: #740101;
+}
+
+.dropdown-contentS {
+  display: none;
+  position: absolute;
+  background-color: #7F7F7F;
+  overflow: auto;
+  box-shadow:  0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  width: 500px;
+  margin-left: -244px;
+}
+
+#myDropdownS.dropdown-contentS {
+  position: absolute;
+  z-index: 3;
+  margin-left: -372px;
+  border-left: 3px solid #740101;
+  border-right: 3px solid #740101;
+  border-bottom: 3px solid #740101;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#myDropdownS.dropdown-contentS .kisprofildiv:first-child
+{
+  margin: 10px;
+}
+
+#profkepkicsi {
+  box-shadow: 0 12px 16px 0 rgb(116 1 1 / 24%), 0 17px 50px 0 rgb(116 1 1 / 19%);
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+}
+
+#aznevkicsi {
+  font-size: 18px;
+  width: 100px;
+  margin: 10px;
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+#kedvenclinkkicsi, #nezendokicsi, #profilrakicsi, #beallkicsi, #kijkicsi {
+  width: 130px;
+  background-color: transparent;
+  float: right;
+  padding: 0px;
+  font-size: 14px;
+  margin-right: 12px;
+  text-decoration: underline;
+}
+
+#profilrakicsi, #beallkicsi, #kijkicsi {
+  margin: 7px 50px 0px 0px;
+}
+
+#profilrakicsi {
+  margin-top: 28px;
+}
+
+#kedvenclinkkicsi:hover, #nezendokicsi:hover, #profilrakicsi:hover, #beallkicsi:hover, #kijkicsi:hover {
+  color: #740101;
+} 
+
+#aznevkicsi {
+  background-color: transparent;
+  padding: 0px;
+  border: none;
+  text-align: right;
+  margin-bottom: 0px;
+  color: #333333;
+}

@@ -1,0 +1,483 @@
+/*Filmimádók weboldal része*/
+/*profil css*/
+/*a profil tartalma az oldalon*/
+#profhr {
+    border: 1px solid #D6DBD2;
+    margin-bottom: 10px;
+}
+
+.felhasznProfil {
+    box-sizing: border-box;
+    background-color: #8C0000;
+    max-width: 900px;
+    margin: 110px auto 40px auto;
+    color: #D6DBD2;
+    font-family: Arial;
+    padding: 25px;
+    border: 1px solid #4F0000;
+    box-shadow: 0 12px 16px 0 rgb(116 1 1 / 24%), 0 17px 50px 0 rgb(116 1 1 / 19%);
+}
+
+.en {
+    box-sizing: border-box;
+    background-color: #7F7F7F;
+    padding: 20px;
+    min-height: 550px;
+}
+
+.cimkek, .sajatlinkek, .adatinputok {
+    font-size: 18px;
+    color: #D6DBD2;
+}
+
+.adatinputok {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+    font-style: italic;
+    color: #333333;
+    font-size: 17px;
+}
+
+.adatinputok:focus {
+    border: none;
+    outline: none;
+}
+
+.sajatlinkek {
+    position: relative;
+    font-weight: bold;
+}
+
+.sajatlinkek:hover {
+    color: #740101;
+    cursor: pointer;
+}
+
+#form1, #form2 {
+    padding: 10px;
+}
+
+#form1 {
+    float: left;
+    width: 550px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+#form2
+{   
+    float: right;
+    margin-right: -170px;
+    margin-top: -12px;
+}
+
+#profkep {
+    box-shadow: 0 12px 16px 0 rgb(116 1 1 / 24%), 0 17px 50px 0 rgb(116 1 1 / 19%);
+    border-radius: 10px;
+    margin: 0px 25px 25px 0px;
+    float: left;
+}
+
+#leirmagam {
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: black;
+    width: 80%;
+    margin: 8px 10%;
+    font-size: 15px;
+    resize: none;
+    overflow: hidden;
+    display: block;
+    height: 80px;
+}
+
+#leirmagamcimke {
+    width: 80%;
+    margin: 8px 10%;
+    float: left;
+}
+
+ #azonositonev {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+    font-style: normal;
+    width: 150px;
+ }
+
+ #felfugg {
+    float: right;
+    padding: 3px 7px 3px 7px;
+    width: 190px;
+    height: 25px;
+    font-size: 12px;
+    background-color: #A20000;
+    color: #D6DBD2;
+    border: none;
+    cursor: pointer;
+ }
+
+ #felfugg:hover {
+    background-color: #740101;
+ }
+
+ /*a jobboldali lenyíló ablak*/
+
+ .kisprofildiv {
+    float: left;
+    width: 50%;
+ }
+
+ .fuggovonal {
+    border-left: 4px solid #740101;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+ }
+
+ .leirszerk, .leirment, .leirtorles, #submitMagamrol {
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #D6DBD2;
+    margin-bottom: 7px;
+ }
+
+ .leirtorles {
+    margin-right: 84px;
+ }
+
+ .leirszerk:hover, .leirment:hover, .leirtorles:hover {
+    color: #740101;
+ }
+
+ .dropdown-contentS {
+    display: none;
+    position: absolute;
+    background-color: #7F7F7F;
+    overflow: auto;
+    box-shadow:  0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+    width: 500px;
+    margin-left: -244px;
+  }
+
+ #myDropdownS.dropdown-contentS {
+    position: absolute;
+    z-index: 3;
+    margin-left: -372px;
+    border-left: 3px solid #740101;
+    border-right: 3px solid #740101;
+    border-bottom: 3px solid #740101;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+
+ #myDropdownS.dropdown-contentS .kisprofildiv:first-child
+ {
+    margin: 10px;
+ }
+
+ #profkepkicsi {
+    box-shadow: 0 12px 16px 0 rgb(116 1 1 / 24%), 0 17px 50px 0 rgb(116 1 1 / 19%);
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+ }
+
+ #aznevkicsi {
+    font-size: 18px;
+    width: 100px;
+    margin: 10px;
+    margin-right: 16px;
+    font-weight: bold;
+ }
+
+ #kedvenclinkkicsi, #nezendokicsi, #profilrakicsi, #beallkicsi, #kijkicsi {
+    width: 130px;
+    background-color: transparent;
+    float: right;
+    padding: 0px;
+    font-size: 14px;
+    margin-right: 12px;
+    text-decoration: underline;
+ }
+
+ #profilrakicsi, #beallkicsi, #kijkicsi {
+    margin: 7px 50px 0px 0px;
+ }
+
+ #profilrakicsi {
+    margin-top: 28px;
+ }
+
+ #kedvenclinkkicsi:hover, #nezendokicsi:hover, #profilrakicsi:hover, #beallkicsi:hover, #kijkicsi:hover {
+    color: #740101;
+ } 
+
+ #aznevkicsi {
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    text-align: right;
+    margin-bottom: 0px;
+    color: #333333;
+ }
+
+ /*a profil tartalma az oldalon*/
+ @media only screen and (max-width: 1000px) {
+    #profhr {
+        margin-bottom: 8px;
+    }
+    
+    .felhasznProfil {
+        max-width: 700px;
+        margin: 130px auto 60px auto;
+        padding: 21px;
+    }
+    
+    .en {
+        padding: 12px;
+        min-height: 485px;
+    }
+    
+    .cimkek, .sajatlinkek, .adatinputok {
+        font-size: 16px;
+    }
+    
+    .adatinputok {
+        font-size: 15px;
+    }
+    
+    #regdatum {
+        width: 130px;
+    }
+
+    #form1, #form2
+    {
+        padding: 8px;
+    }
+
+    #form1 {
+        width: 400px;
+        line-height: 22px;
+    }
+
+    #form2 {
+        margin-left: 200px;
+    }
+
+    #form2 input:nth-child(5), #ert{
+        width: 200px; 
+    }
+    
+    #profkep {
+        margin: 0px 23px 23px 0px;
+        width: 180px;
+    }
+    
+    #leirmagam {
+        margin: 6px 10%;
+    }
+    
+    #leirmagamcimke {
+        margin: 0px 10%;
+        float: left;
+    }
+    
+     #azonositonev {
+        font-size: 22px;
+     }
+
+     #hozz
+     {
+        width: 50px;
+     }
+    
+}
+/*a profil tartalma az oldalon*/
+ @media only screen and (max-width: 720px) {
+    #profhr {
+        margin-bottom: 6px;
+        margin-top: 4px;
+    }
+    
+    .felhasznProfil {
+        width: 550px;
+        margin: 180px auto 100px auto;
+        padding: 15px;
+    }
+    
+    .en {
+        padding: 10px;
+        min-height: 400px;
+    }
+
+    .adatinputok {
+        width: 130px;
+    }
+
+    .leirtorles {
+        margin-right: 45px;
+     }
+
+    .sajatlinkek {
+        font-size: 15px;
+    }
+
+    #form1, #form2 {
+        padding: 4px;
+    }
+
+    #form1 {
+        width: 290px;
+        line-height: 15px;
+    }
+
+    #form2 input:nth-child(5), #ert, #jog {
+        width: 200px; 
+    }
+
+    #felfugg {
+        box-sizing: border-box;
+        padding: 1px 4px 1px 4px;
+        width: 160px;
+        height: 20px;
+        font-size: 12px;
+        margin-right: -40px;
+    }
+
+    #profkep {
+        width: 140px;
+    }
+    
+    #leirmagam {
+        margin: 3px 10%;
+        height: 120px;
+    }
+
+     #sajprofemail {
+        width: 200px;
+     }
+
+     footer {
+        width: 150%;
+     }
+}
+
+/*a jobboldali lenyíló ablak*/
+@media only screen and (max-width: 520px) {
+    
+    .dropdown-contentS {
+        width: 490px;
+        margin-left: -490px;
+        margin-top: 50px;
+    }
+    
+    #myDropdownS.dropdown-contentS {
+        margin-left: -492px;
+    }
+
+    #profkepkicsi {
+        border-radius: 5px;
+        margin: 5px;
+     }
+    
+     #aznevkicsi {
+        font-size: 16px;
+        width: 100px;
+        margin: 5px;
+        margin-right: 14px;
+     }
+}
+
+/* Felfuggesztes modal*/
+.modalFugg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    font-family: Arial, serif;
+  }
+  
+  /* Felfuggesztes Modal Content/Box */
+  .modal-contentFugg {
+    background-color: #7F7F7F;
+    margin: 200px auto;
+    padding: 20px;
+    border: 10px solid #740101;
+    width: 450px;
+    height: 260px;
+    box-shadow:  0 12px 16px 0 rgba(116,1,1,0.24), 0 17px 50px 0 rgba(116,1,1,0.19);
+  }
+  
+  .closeFugg {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeFugg:hover,
+  .closeFugg:focus {
+    color: #740101;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #divFugg {
+    width: 70%;
+    margin: 0px auto;
+  }
+  
+  #divFugg>form {
+    margin-top: 10px;
+  }
+
+  #divFugg>form>#kerdesFugg {
+    border: none;
+    background: #D6DBD2;
+    outline: none;
+    padding: 3px;
+    font-size: 16px;
+    width: 310px;
+    float: right;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  #divFugg>form>label {
+    color: #F2F2F2;
+  }
+  
+  #divFugg>form>#kerdesFuggsb
+  {
+    width: 50px;
+    padding: 3px 10px;
+    font-size: 15px;
+    float: right;
+    margin: 10px 0px;
+    background-color: #A20000;
+    color: #D6DBD2;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #divFugg>form>#kerdesFuggsb:hover
+  {
+    background-color: #740101;
+  }
+
+  #submitMagamrol
+  {
+    border: none;
+    background-color: transparent;
+    padding: none;
+    margin: 0px;
+  }

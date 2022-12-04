@@ -1,0 +1,531 @@
+/*Filmimádók weboldal része*/
+/*szineszprofil css*/
+/*
+    .kozepsoresz -  az a div ami a vázat adja
+*/
+.kozepsoresz{
+    box-sizing: border-box;
+    border-color: red;
+    border-style: solid;
+    border-width: 10px;
+    background-color: #7F7F7F;
+    margin: auto;
+    padding: 20px;
+    width: 75%;
+    height: 75%;
+}
+
+.szineszekresz{
+    margin-left: 20px;
+    width: 97%;
+    height: 98%;
+    overflow: hidden;
+    background-color: #D6DBD2;
+    padding-bottom: 30px;;
+}
+
+/*
+    .szineszekkep - a képet a szinészről és az értékelés részt formázza meg
+*/
+.szineszekkep{
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 60px;
+    width: 20%;
+    height: 438px;
+    float: left;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 0px #D6DBD2;
+}
+
+/*
+    .ertekeles - az ertekeles-ben a csillagoknak van fentartva
+*/
+.ertekeles {
+    box-sizing: border-box;
+    padding-right: 2.5vw;
+    float: left;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.ertekeles p {
+    margin:0px;
+    margin-top: 10px;
+    margin-left: -22px;
+    width: 100%;
+    float:left;
+    font-size: 15px;
+    font-family: Arial, serif;
+}
+.ertekeles:not(:checked) > input {
+    position:absolute;
+    display: none;
+}
+.ertekeles:not(:checked) > label {
+    float:right;
+    margin-left: auto;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:rgb(125, 125, 125);
+}
+.ertekeles:not(:checked) > label:before {
+    content: '★';
+    
+}
+.ertekeles > input:checked ~ label {
+    color: #ffc700;  
+}
+.ertekeles:not(:checked) > label:hover,
+.ertekeles:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.ertekeles > input:checked + label:hover,
+.ertekeles > input:checked + label:hover ~ label,
+.ertekeles > input:checked ~ label:hover,
+.ertekeles > input:checked ~ label:hover ~ label,
+.ertekeles > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/*
+    .szineszekleiras - a táblázatig ad egy "vázat", itt csak alapvető formázás van,
+    a táblázatot itt nem lehet formázni
+*/
+.szineszekleiras{
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    margin: 20px;
+    text-align: justify;
+    font-family: Arial, serif;
+    font-size: 20px;
+}
+#szineszneve{
+    font-size: 50px;
+    font-family: Arial, serif;
+}
+.like-button {
+    position: absolute;
+    font-size: 75px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.like-button::before {
+      font-size: 75px;
+      color: grey;
+      position: absolute;
+      content: '♥';
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+}
+.like-button::after {
+      font-size: 75px;
+      color: red;
+      content: '♥';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.2s;
+}
+.liked::after {
+      transform: translate(-50%, -50%) scale(1.1);
+}
+
+/*
+    .szineszekleiras table/th/td - A táblázatot és annak sorait/oszlopait lehet
+    formázni
+*/
+
+.szineszekleiras table{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.szineszekleiras th, td{
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+}
+.szineszekleiras th{
+    width: 150px;
+}
+.szineszszerepei{
+    margin-left: 725px;
+    margin-top: -770px;
+}
+.liszineszszerepei a {
+    text-decoration: none; 
+    background-color : rgb(140, 140, 140);
+    color: white;
+    border-radius: 10px;
+}
+.navszineszszerepei {
+    width : 575px; 
+    background: rgb(141, 140, 140);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.spanszineszszerepei {
+  padding : 10px;
+  background-color : rgb(140, 140, 140);
+  color : white;
+  font-size : 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor : pointer;
+  display: block;
+  border-radius: 10px;
+}
+.spanszineszszerepei::after {
+  float: right;
+  right: 10%;
+  content: "\25be";
+}
+.slideszineszszerepei {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+  border-radius: 10px;
+}
+.slideszineszszerepei li {
+    padding : 10px;
+    background-color: rgb(140, 140, 140);
+    margin-left: -35px;
+    width: 550px;
+    text-align: left;
+    border-radius: 10px;
+}
+.szineszdij{
+    margin-top: 145px;
+}
+.liszineszdij a{
+    text-decoration: none; 
+    background-color : white;
+    color: grey;
+    border-radius: 10px;
+}
+.navszineszdij {
+    width : 575px; 
+    background: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.spanszineszdij {
+  padding : 10px;
+  background : white; 
+  color : grey;
+  font-size : 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor : pointer;
+  display: block;
+  border-radius: 10px;
+}
+.spanszineszdij::after {
+  float: right;
+  right: 10%;
+  content: "\25be";
+  border-radius: 10px;
+}
+.slideszineszdij {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+  border-radius: 10px;
+}
+.slideszineszdij li {
+    padding : 10px;
+    background-color: white;
+    margin-left: -35px;
+    width: 550px;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#touch {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}
+#touch1 {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}     
+#touch:checked + .slideszineszszerepei {
+    height: auto;
+} 
+#touch1:checked + .slideszineszdij{
+    height: auto;
+}
+.gallery-container {
+   
+    justify-content: center;
+    background-color: #D6DBD2;
+    margin-left: 20px;
+    margin-top: -50px;
+    width: 97%;
+    height: 750px;
+    padding-top: 30px
+}
+.thumbnails {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 25px;
+}
+.thumbnails img {
+    width: 75px;
+    height: 50px;
+    cursor: pointer;
+}
+.scrollbar {
+    width: 1px;
+    height: 720px;
+    background: #ccc;
+    display: block;
+    margin: 0 0 0 8px;
+    margin-top: -280px;
+    margin-left: 125px;
+}
+.thumb {
+    width: 1px;
+    position: absolute;
+    height: 0;
+    background: #000;
+
+}
+.slides {
+    margin-top: -725px;
+    margin-left: 150px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: 70%;
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+.slides > div {
+    scroll-snap-align: start;
+}
+.slides img {
+    width: 540px;
+    object-fit: contain;
+}
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+/*
+    .kommentszekcio - A komplett kommentszekció rész hátterét adja
+*/
+.kommentszekcio{
+    width: 94.1%;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #D6DBD2;
+}
+
+/*
+    .kommentiras - Egy div ami összefogja a hozzászolás input-okot és a felhasználó profilképét
+*/
+.kommentiras{
+    margin-left: 50px;
+}
+
+/*
+    #kiras és #kiras:focus - A text input formázása
+*/
+.kiras{
+    width: 89%;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.kiras:focus{
+    background-color: rgba(0,0,0,0.5);
+    border: 3px solid rgba(0,0,0,0.5);
+    color:white;
+    text-decoration: none;
+}
+
+/*
+    #submit és #submit:hover - A gombot formázza amivel a létrehozza 
+    a megírt hozzászólást
+*/
+#kiras{
+    margin-top:5px;
+    margin-left: 89%;
+    background-color: grey;
+    color:white;
+    border-radius: 30px;
+    border-color: black;
+}
+#kiras:hover{
+    background-color: black;
+}
+
+/*
+    .kommentszekcio h3 - A kommentszekció cimének "Hozzászólások" formázása
+*/
+.kommentszekcio h3{
+    font-size: 30px;
+    font-family: Arial, serif;
+}
+
+/*
+    .kommentszekcio1 - Beljebb tolja mind a hozzászolást magát és mind az esetleges
+    választ is az adott hozzászólásra
+*/
+.kommentszekcio1{
+    margin:20px;
+    padding: 30px;
+}
+
+.kommentszekcio2{
+    background-color: grey;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+/*
+    .profilkep - A profilképeket formázza ami a text inputnál van és azt ami
+    a hozzászólás és nem azt ami a hozzászólásra érkező válasz
+*/
+.profilkep{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+    margin: 10px;
+}
+
+/*
+    .kommentnev - A kommentelő nevének formázása
+*/
+.kommentnev{
+    overflow: hidden;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+/*
+    .kommentido - A komment idejének formázása
+*/
+.kommentido {
+    margin-left:170px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+/*
+    .kommentszoveg - A kommentet magát formázza
+*/
+.kommentszoveg{
+    font-size: 20px;
+    font-family: Arial, serif;
+    margin-top: 30px;
+    margin-left:30px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+/*
+    az összes .fa - A szimbolumokat formázza
+*/
+.fa-heart{
+    margin-left: 5%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.fa-heart, .fa-edit, .fa-trash, .fa-reply{
+    cursor: pointer;
+    color: #D6DBD2;
+}
+
+.fa-heart:hover, .fa-trash:hover, .fa-reply:hover, .fa-edit:hover{
+    color: #740101;
+}
+/*
+    .kommentikon a - A válaszlehetőséget fentartó gomb formázása
+*/
+.kommentikon {
+    margin-left: 10%;
+    margin-top: -43px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/*
+    .valaszszekcio - A válaszlehetőség formázása
+*/
+.valaszszekcio{
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: grey;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/*
+    .valaszkep - A kommentre válaszoló profilképének formázása
+*/
+.valaszkep{
+    float:left;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    border-radius: 50px; 
+    margin: 10px;
+    margin-top: 10px;
+}
+
+/*
+    .valasznev - A kommentre válaszoló nevének formázása
+*/
+.valasznev{
+    overflow: hidden;
+    padding-top: 15px;
+    font-size: 15px;
+    margin-top: -5px;
+    margin-left: 30px;
+}
+
+/*
+    .valaszido - A kommentre érkezett válasz idejének a formázása
+*/
+.valaszido{
+    margin-left: 120px;
+    overflow: hidden;
+    margin-top: -17px;
+}
+
+/*
+    .valaszszoveg - A kommentet magát formázza meg
+*/
+.valaszszoveg{
+    font-size: 15px;
+    font-family: Arial, serif;
+    margin: 35px;
+    padding-left: 15px;
+}

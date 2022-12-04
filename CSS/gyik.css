@@ -1,0 +1,24 @@
+/*Filmimádók weboldal része*/
+/*gyik css*/
+
+.GYIK {
+  border: 5px #740101;
+  background-color: #740101;    
+  text-align: left;
+  margin: 30px auto;
+  max-width: 80%;
+  padding: 20px 50px;
+  float: center;
+  font-family: Arial, serif;
+  color: #D6DBD2;
+  margin-top: 100px;
+}
+
+.GYIK h1 {
+	text-align: center;
+  font-size:250%;
+}
+
+.GYIK strong {
+	font-size:120%;
+}
