@@ -1,0 +1,7 @@
+Az itteni php file-ok: az alap file-ok amiket a weboldal betölt
+CSS mappa: weboldalon betöltött CSS-ek
+flag mappa: adatbázisban lévő nemzetiség hivatkozások képei
+kep mappa: adatbázisban lévő kepek hivatkozásainak képei
+nagyreszthtml mappa:  weboldalon felhasznált html, htm fileok állománya
+php mappa: weboldalhoz tartozó php file-jai
+Webkep mappa: a weboldal álltal felhasznált képek
